@@ -3,10 +3,30 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title></title>
+	<script type="text/javascript" charset="utf-8">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1234567-89']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol
+			? 'https://ssl' : 'http://www')
+			+ '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
 </head>
 <body>
-	<a href="#" data-value="0">0</a>
-	<a href="#" data-value="1">1</a>
+	<a href="#" data-event="click" data-type="_trackEvent">0</a>
+	<a href="#" data-event="click" data-type="_trackEvent">1</a>
+	<form id="" action="action" data-event="submit" data-categories="form-submit" method="post">
+		<label for="">Nome:</label>
+		<input type="text" name="" data-event="focus" data-type="_trackEvent" data-categories="inputs" value="Digite seu nome" id="">
+		
+	</form>
 </body>
 <script src="script.js" type="text/javascript"></script>
 </html>
